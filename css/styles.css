@@ -369,6 +369,106 @@ body::after {
 }
 .menu__preview.is-on { opacity: 1; scale: 1; }
 
+/* ============ NA CAIXA (galeria de pratos) ============ */
+.gallery {
+  background: var(--black); color: var(--white);
+  padding: clamp(96px, 14vh, 150px) var(--gutter);
+}
+/* mosaico em colunas: cada foto mantém o próprio formato */
+.gallery__grid { columns: 2; column-gap: clamp(12px, 2vw, 28px); }
+.gallery__item { break-inside: avoid; margin-bottom: clamp(20px, 3vw, 40px); overflow: hidden; }
+.gallery__item img { aspect-ratio: auto; height: auto; }
+.js .gallery__item.is-in:hover img { scale: 1.04; transition: scale .8s var(--ease-out); }
+.gallery__item figcaption { margin-top: 10px; }
+
+/* ============ ARTE ============ */
+.art--peixes   { --src: url("../assets/brand/peixes-do-dia.svg"); aspect-ratio: 2460 / 1508; }
+.art--hiramasa { --src: url("../assets/brand/hiramasa.svg");      aspect-ratio: 2114 / 1319; }
+
+.artwork {
+  background: var(--paper); color: var(--black);
+  padding: clamp(96px, 14vh, 150px) var(--gutter);
+}
+/* folha de artes: as letras da marca em branco sobre o vermelho com o padrão */
+.artwork__sheet {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: grid; gap: clamp(28px, 5vw, 64px); justify-items: center; align-items: center;
+  padding: clamp(36px, 6vw, 90px);
+  background: var(--red); color: var(--white);
+  box-shadow: 14px 14px 0 var(--black);
+  rotate: -1deg;
+}
+.artwork__mark { width: min(100%, 460px); color: var(--white); }
+.artwork__posters,
+.artwork__uses { display: grid; gap: clamp(16px, 2.4vw, 32px); margin-top: clamp(56px, 9vh, 110px); }
+.artwork__poster img { box-shadow: 10px 10px 0 rgb(14 14 14 / .18); }
+.artwork__poster:nth-child(1) { rotate: -1.2deg; }
+.artwork__poster:nth-child(2) { rotate: .8deg; }
+.artwork__poster:nth-child(3) { rotate: -.6deg; }
+.artwork .photo figcaption span { color: var(--red); }
+
+/* ============ LOJA ============ */
+.shop {
+  background: var(--charcoal); color: var(--white);
+  padding: clamp(96px, 14vh, 150px) var(--gutter);
+}
+.shop__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 2.4vw, 32px) clamp(14px, 2.4vw, 32px); }
+.shop__lead { grid-column: 1 / -1; }
+.shop__lead img { aspect-ratio: 4 / 3; object-position: 50% 30%; }
+.item__name { font-family: var(--font-display); text-transform: uppercase; font-size: var(--step-2); line-height: 1; margin-top: 14px; }
+.item__desc { margin-top: 8px; opacity: .72; }
+.shop__cta { margin-top: clamp(40px, 6vh, 64px); }
+
+/* ============ EVENTOS ============ */
+.events {
+  position: relative; isolation: isolate; overflow: hidden;
+  background: var(--red); color: var(--white);
+  padding: clamp(96px, 14vh, 150px) var(--gutter);
+}
+.events .sec-head__index { color: var(--white); }
+.events .sec-title__hl { background: var(--black); color: var(--white); }
+.events__list { display: grid; gap: clamp(56px, 7vw, 96px); }
+.event { display: grid; gap: 24px; align-content: start; }
+/* cartaz colado com fita, como o quadro do peixe do dia */
+.event__poster { rotate: -1.5deg; box-shadow: 14px 14px 0 rgb(0 0 0 / .25); }
+.event:nth-child(even) .event__poster { rotate: 1.2deg; }
+.event__poster::before {
+  content: ""; position: absolute; z-index: 2; top: -14px; left: 50%; translate: -50% 0; rotate: -3deg;
+  width: 120px; height: 30px;
+  background: rgb(242 184 184 / .85);
+}
+.event__poster img { aspect-ratio: 4 / 5; }
+.event__status { justify-self: start; display: inline-block; background: var(--black); padding: .35em .7em; }
+.event__date { font-family: var(--font-display); font-size: clamp(4rem, 11vw, 8.5rem); line-height: .85; margin-top: 14px; }
+.event__meta { margin-top: 10px; }
+.event__title { font-family: var(--font-display); text-transform: uppercase; font-size: var(--step-2); line-height: 1; margin-top: 18px; max-width: 16ch; }
+.event__text { margin-top: 10px; max-width: 36ch; font-size: var(--step-1); line-height: 1.3; font-weight: 500; }
+.events__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; margin-top: clamp(64px, 9vh, 110px); }
+.events__ask { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(2rem, 5vw, 4rem); line-height: .95; }
+
+@media (min-width: 900px) {
+  .gallery__grid { columns: 3; }
+  .artwork__sheet { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .artwork__posters, .artwork__uses { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .shop__grid { grid-template-columns: minmax(0, 1.3fr) repeat(2, minmax(0, 1fr)); }
+  .shop__lead { grid-column: 1; grid-row: 1 / span 2; }
+  .shop__lead img { aspect-ratio: auto; height: 100%; min-height: 100%; }
+  .shop__lead { display: flex; flex-direction: column; }
+  .shop__lead img { flex: 1; }
+  .events__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 899px) {
+  /* no celular, pôsteres e aplicações viram uma fileira para arrastar */
+  .artwork__posters, .artwork__uses {
+    grid-auto-flow: column; grid-auto-columns: 72vw;
+    overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+    margin-right: calc(var(--gutter) * -1); padding: 14px var(--gutter) 18px 4px;
+  }
+  .artwork__posters::-webkit-scrollbar, .artwork__uses::-webkit-scrollbar { display: none; }
+  .artwork__posters > *, .artwork__uses > * { scroll-snap-align: start; }
+  .artwork__sheet { rotate: -.6deg; }
+}
+
 /* ============ HISTÓRIA ============ */
 .story {
   position: relative; overflow: hidden;
@@ -581,7 +681,8 @@ a:hover > .roll > span { transform: translateY(-50%); }
   background: #000; opacity: calc(var(--cover, 0) * .6);
   pointer-events: none;
 }
-.today, .route, .menu, .story, .footer, .ticker { position: relative; }
+/* seções depois do manifesto precisam ser posicionadas para cobrir as cartas presas */
+.today, .route, .gallery, .menu, .artwork, .shop, .events, .story, .footer, .ticker { position: relative; }
 
 /* ---------- Fotos com cortina ---------- */
 .js .photo img {

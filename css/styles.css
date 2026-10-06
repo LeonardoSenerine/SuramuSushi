@@ -871,3 +871,7 @@ main { background: var(--black); }
 .nf__credit { position: relative; z-index: 3; padding-bottom: 14px; }
 .page .nav { color: var(--white); }
 .page .footer { background: var(--red); color: var(--white); }
+
+/* nada pode vazar para os lados no celular (as fotos começam ampliadas antes da revelação) */
+html { overflow-x: hidden; }
+main > section, main > div, body > footer { overflow-x: clip; }

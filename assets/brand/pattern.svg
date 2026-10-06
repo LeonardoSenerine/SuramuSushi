@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260" fill="none" stroke="#A30E13" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <!-- nigiri -->
+  <g transform="translate(18 28) rotate(-12)">
+    <rect x="0" y="14" width="58" height="18" rx="9"/>
+    <path d="M-4 16 C10 0 44 -2 62 12 C48 18 18 20 -4 16Z"/>
+    <path d="M14 8 l6 6 M28 5 l6 7 M42 6 l5 7"/>
+  </g>
+  <!-- peixe -->
+  <g transform="translate(150 22) rotate(8)">
+    <path d="M0 20 C14 0 52 0 66 20 C52 40 14 40 0 20Z"/>
+    <path d="M66 20 L84 6 L80 20 L84 34Z"/>
+    <circle cx="16" cy="17" r="3"/>
+    <path d="M30 12 v16 M38 11 v18 M46 12 v16"/>
+  </g>
+  <!-- hashi -->
+  <g transform="translate(36 120)">
+    <path d="M0 0 L70 46 M8 -8 L76 40"/>
+  </g>
+  <!-- maki -->
+  <g transform="translate(176 140)">
+    <circle cx="0" cy="0" r="22"/>
+    <circle cx="0" cy="0" r="12"/>
+    <path d="M-4 -3 l4 4 l5 -5"/>
+  </g>
+  <!-- bento -->
+  <g transform="translate(26 200) rotate(-6)">
+    <rect x="0" y="0" width="70" height="40" rx="3"/>
+    <path d="M30 0 v40 M30 20 h40"/>
+    <circle cx="14" cy="20" r="6"/>
+  </g>
+  <!-- asterisco -->
+  <g transform="translate(150 222)">
+    <path d="M0 -12 v24 M-11 -6 l22 12 M-11 6 l22 -12"/>
+  </g>
+  <!-- gota -->
+  <g transform="translate(232 96)">
+    <path d="M0 -12 C6 -2 8 4 0 10 C-8 4 -6 -2 0 -12Z"/>
+  </g>
+</svg>

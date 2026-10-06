@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SURAMU スラム · Real Sushi · Delivery de Quebrada</title>
+  <meta name="description" content="Sushi de verdade, feito na quebrada, pra quebrada. Sem salmão, sem cream cheese: só peixe do dia.">
+  <meta name="theme-color" content="#C8141A">
+  <link rel="canonical" href="https://leonardosenerine.github.io/SuramuSushi/">
+
+  <!-- Capa de link (WhatsApp, Instagram, Facebook, X, LinkedIn...).
+       Se o site for para um domínio próprio, troque https://leonardosenerine.github.io/SuramuSushi/ pelo domínio novo. -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:site_name" content="SURAMU スラム">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://leonardosenerine.github.io/SuramuSushi/">
+  <meta property="og:title" content="SURAMU スラム · Real Sushi · Delivery de Quebrada">
+  <meta property="og:description" content="Sem salmão, sem cream cheese: só peixe do dia. Sushi de verdade, feito na quebrada, pra quebrada. Santana, São Paulo.">
+  <meta property="og:image" content="https://leonardosenerine.github.io/SuramuSushi/assets/og/suramu-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo pichado da SURAMU em branco sobre vermelho, com um nigiri e a faixa: sem salmão, sem cream cheese, só peixe do dia">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SURAMU スラム · Real Sushi · Delivery de Quebrada">
+  <meta name="twitter:description" content="Sem salmão, sem cream cheese: só peixe do dia. Santana, São Paulo.">
+  <meta name="twitter:image" content="https://leonardosenerine.github.io/SuramuSushi/assets/og/suramu-og.jpg">
+
+  <link rel="icon" href="assets/og/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/brand/suramu-kata.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/og/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <script>
+    document.documentElement.classList.add("js");
+    try {
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches && !sessionStorage.getItem("suramu-intro"))
+        document.documentElement.classList.add("intro");
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tenor Sans é placeholder da fonte de título da marca: trocar em --font-display quando tivermos o arquivo licenciado -->
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Syne:wght@400;500;700&family=Space+Mono:wght@400;700&family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/brand/suramu-tag.svg" as="image" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "SURAMU スラム",
+    "servesCuisine": "Japonesa",
+    "telephone": "+55 11 99413-9997",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Damiana da Cunha, 234",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "02450-010",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "18:00",
+      "closes": "22:00"
+    }]
+  }
+  </script>
+</head>
+<body>
+
+  <div class="loader" aria-hidden="true">
+    <span class="kata loader__kata"></span>
+    <p class="loader__tag mono">Real sushi · Delivery de quebrada</p>
+    <span class="loader__count" id="loader-count">00</span>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="nav__mark" href="#top" aria-label="SURAMU, voltar ao início"><span class="kata" aria-hidden="true"></span></a>
+    <nav class="nav__links mono" aria-label="Principal">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#peixe-do-dia">Peixe do dia</a>
+      <a href="#rota">Do mercado</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#historia">História</a>
+    </nav>
+    <a class="btn btn--black btn--sm" href="#pedir">Pedir agora</a>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="pattern" aria-hidden="true"></div>
+
+      <div class="hero__meta mono">
+        <span class="jp">本日の魚</span>
+        <span class="hero__meta-mid" data-scramble>Real sushi · Santana, São Paulo</span>
+        <span class="status" data-status><i class="status__dot"></i><span class="status__text">Ter a sáb · 18h às 22h</span></span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="sr-only">SURAMU: Real Sushi, Delivery de Quebrada</span>
+        <span class="tag hero__tag" aria-hidden="true"></span>
+        <span class="drip" style="--x:11%; --h:3vw;   --d:1.55s" aria-hidden="true"></span>
+        <span class="drip" style="--x:33%; --h:1.8vw; --d:1.75s" aria-hidden="true"></span>
+        <span class="drip" style="--x:52%; --h:3.6vw; --d:1.65s" aria-hidden="true"></span>
+        <span class="drip" style="--x:73%; --h:2.2vw; --d:1.85s" aria-hidden="true"></span>
+        <span class="drip" style="--x:90%; --h:2.8vw; --d:1.7s"  aria-hidden="true"></span>
+      </h1>
+
+      <div class="sticker" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="sticker-circle" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+          <circle cx="100" cy="100" r="99" fill="#0E0E0E"/>
+          <text class="sticker__text"><textPath href="#sticker-circle" textLength="474">SEM SALMÃO ✱ SEM CREAM CHEESE ✱ SÓ PEIXE DO DIA ✱</textPath></text>
+          <g transform="translate(100 102)" fill="none" stroke="#C8141A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M-38 0 C-24 -22 14 -22 28 0 C14 22 -24 22 -38 0Z"/>
+            <path d="M28 0 L46 -14 L42 0 L46 14Z"/>
+            <circle cx="-22" cy="-4" r="3.5" fill="#C8141A"/>
+            <path d="M-6 -9 v18 M4 -10 v20 M14 -8 v16"/>
+          </g>
+        </svg>
+      </div>
+
+      <img class="hero__nigiri" data-parallax="0.16" src="assets/img/nigiri-cutout.png" width="700" height="491"
+           alt="Nigiri de peixe do dia com a pele prateada maçaricada">
+
+      <div class="hero__foot">
+        <p class="hero__lede">Sushi de verdade, feito na quebrada, pra quebrada. Peixe comprado de madrugada, cortado no mesmo dia.</p>
+        <div class="hero__actions">
+          <a class="btn btn--white btn--big" href="#pedir">Pedir agora <span aria-hidden="true">→</span></a>
+          <a class="hero__scroll mono" href="#manifesto">Role <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Sem salmão <i>✱</i> Sem cream cheese <i>✱</i> Só peixe do dia <i>✱</i> Delivery de quebrada <i>✱</i> スラム <i>✱</i>&nbsp;</span>
+        <span>Sem salmão <i>✱</i> Sem cream cheese <i>✱</i> Só peixe do dia <i>✱</i> Delivery de quebrada <i>✱</i> スラム <i>✱</i>&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="mf mf--charcoal" id="manifesto" aria-labelledby="mf1">
+      <p class="mf__index mono">Manifesto <b>01</b>/03</p>
+      <h2 class="mf__type" id="mf1" data-fit>
+        <span class="row" data-w="0.74"><span class="row__in">Nosso</span></span>
+        <span class="row" data-w="0.88" data-x="0.12"><span class="row__in">Sushi <mark class="bar bar--red">não tem</mark></span></span>
+        <span class="row" data-w="0.56"><span class="row__in">Cream</span></span>
+        <span class="row" data-w="0.66" data-x="0.14"><span class="row__in">Cheese</span></span>
+      </h2>
+      <p class="mf__note reveal">Nada de esconder peixe embaixo de queijo. O sabor vem do corte, do arroz e do tempero no ponto.</p>
+      <span class="kata kata--corner" aria-hidden="true"></span>
+    </section>
+
+    <section class="mf mf--coral" aria-labelledby="mf2">
+      <p class="mf__index mono">Manifesto <b>02</b>/03</p>
+      <h2 class="mf__type" id="mf2" data-fit>
+        <span class="row" data-w="0.5"><span class="row__in">Não</span></span>
+        <span class="row" data-w="0.78" data-x="0.1"><span class="row__in"><mark class="bar bar--black">trabalhamos</mark></span></span>
+        <span class="row" data-w="0.4"><span class="row__in">com</span></span>
+        <span class="row" data-w="0.76" data-x="0.14"><span class="row__in">salmão</span></span>
+      </h2>
+      <p class="mf__note reveal">Salmão de cativeiro vem de longe e chega sempre igual. A gente prefere o que o mar daqui entregou hoje.</p>
+      <img class="mf__nigiri" data-parallax="-0.12" src="assets/img/nigiri-cutout.png" width="700" height="491" alt="" loading="lazy">
+    </section>
+
+    <section class="mf mf--paper" aria-labelledby="mf3">
+      <p class="mf__index mono">Manifesto <b>03</b>/03</p>
+      <div class="mf__grid">
+        <div class="mf__col">
+          <h2 class="mf__type mf__type--red" id="mf3" data-fit>
+            <span class="row" data-w="0.32"><span class="row__in">Só</span></span>
+            <span class="row" data-w="0.86" data-x="0.14"><span class="row__in">peixe</span></span>
+            <span class="row" data-w="0.86"><span class="row__in"><mark class="bar bar--red">do dia</mark></span></span>
+          </h2>
+          <p class="mf__note mf__note--dark reveal">O cardápio é o que o mar entregou. Se o peixe não estiver bom, não entra na caixa.</p>
+        </div>
+        <figure class="photo mf__photo reveal">
+          <img src="assets/img/chef-peixe-camiseta.webp" width="1280" height="1600" loading="lazy"
+               alt="O chef na cozinha da SURAMU segurando um olho-de-boi inteiro">
+          <figcaption class="mono"><span>Inteiro</span> Chega assim. Sai em nigiri.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PEIXES DO DIA ============ -->
+    <section class="today" id="peixe-do-dia" aria-labelledby="today-title">
+      <div class="pattern" aria-hidden="true"></div>
+      <div class="today__grid">
+        <div class="today__intro">
+          <h2 class="sr-only" id="today-title">Peixes do dia</h2>
+          <span class="art art--pescados reveal" aria-hidden="true"></span>
+          <p class="today__text reveal">Todo dia o quadro muda. O que chegou de madrugada, o que tá acabando e o que já foi.</p>
+        </div>
+
+        <div class="board reveal">
+          <span class="board__tape" aria-hidden="true"></span>
+          <header class="board__head">
+            <p class="mono" id="board-date">Hoje</p>
+            <p class="board__jp jp">本日の魚</p>
+          </header>
+          <ol class="board__list" id="board-list"></ol>
+          <noscript><p class="mono">Ative o JavaScript para ver o quadro do dia, ou chame no WhatsApp.</p></noscript>
+          <footer class="board__foot mono">
+            <span><i class="dot dot--in"></i>Chegou hoje</span>
+            <span><i class="dot dot--last"></i>Últimas peças</span>
+            <span><i class="dot dot--out"></i>Acabou</span>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DO MERCADO AO BALCÃO ============ -->
+    <section class="route" id="rota" aria-labelledby="route-title">
+      <div class="route__sticky">
+        <header class="route__head">
+          <p class="mono route__kicker" data-scramble>Do mercado ao balcão</p>
+          <h2 class="route__title" id="route-title">A rota <em>do peixe</em></h2>
+          <div class="route__progress" aria-hidden="true"><span id="route-bar"></span></div>
+        </header>
+        <div class="route__track" id="route-track">
+          <article class="stop">
+            <figure class="photo"><img src="assets/img/mercado-noite.webp" width="1200" height="1600" loading="lazy" alt="O chef saindo do mercado de peixe de madrugada com um bonito na mão"></figure>
+            <p class="stop__time" data-scramble>04:00</p>
+            <h3 class="stop__name">Mercado</h3>
+            <p class="stop__text">Antes do sol, no mercado de peixe. Conversa com o peixeiro, olho no olho.</p>
+          </article>
+          <article class="stop">
+            <figure class="photo"><img src="assets/img/mercado-peixe.webp" width="1200" height="1600" loading="lazy" alt="O chef mostrando um olho-de-boi inteiro no mercado"></figure>
+            <p class="stop__time" data-scramble>04:40</p>
+            <h3 class="stop__name">Escolha</h3>
+            <p class="stop__text">Olho brilhante, guelra vermelha, carne firme. Se não passar no teste, não vem.</p>
+          </article>
+          <article class="stop">
+            <figure class="photo"><img src="assets/img/peixes-crus-prato.webp" width="1200" height="1600" loading="lazy" alt="Lombos de atum, olho-de-boi e robalo com um tentáculo de polvo num prato azul"></figure>
+            <p class="stop__time" data-scramble>10:00</p>
+            <h3 class="stop__name">Corte</h3>
+            <p class="stop__text">Peixe limpo, porcionado e descansando no frio. Nada congelado, nada de ontem.</p>
+          </article>
+          <article class="stop">
+            <figure class="photo"><img src="assets/img/chef-montando.webp" width="1200" height="1600" loading="lazy" alt="O chef finalizando pratos de oshizushi com ova e cebolinha"></figure>
+            <p class="stop__time" data-scramble>18:00</p>
+            <h3 class="stop__name">Montagem</h3>
+            <p class="stop__text">Arroz temperado na hora. Peça por peça, na mão, do jeito que os mestres ensinaram.</p>
+          </article>
+          <article class="stop">
+            <figure class="photo"><img src="assets/img/box-aberto.webp" width="1200" height="1600" loading="lazy" alt="Caixa aberta com nigiris, sashimi, hosomaki e uramaki"></figure>
+            <p class="stop__time" data-scramble>19:00</p>
+            <h3 class="stop__name">Sua quebrada</h3>
+            <p class="stop__text">Caixa fechada e direto pra sua porta. Do mar pra mesa no mesmo dia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CARDÁPIO ============ -->
+    <!-- Itens e preços são exemplos: substituir pelo cardápio real -->
+    <section class="menu" id="cardapio" aria-labelledby="menu-title">
+      <header class="sec-head">
+        <p class="mono sec-head__index" data-scramble>04 · Cardápio</p>
+        <h2 class="sec-title" id="menu-title">O que tem <span class="sec-title__hl">hoje</span></h2>
+        <p class="sec-head__text">As peças mudam com o peixe do dia. Combos montados pelo chef, sem salmão e sem cream cheese.</p>
+      </header>
+
+      <div class="menu__cols">
+        <div class="menu__group reveal">
+          <h3 class="menu__group-title mono">Combos</h3>
+          <ul class="menu__list">
+            <li class="dish" data-img="assets/img/box-sashimi.webp">
+              <img class="dish__thumb" src="assets/img/box-sashimi.webp" alt="" loading="lazy" width="120" height="160">
+              <div class="dish__body"><span class="dish__name">Sashimi do dia</span><span class="dish__desc">15 fatias · 3 peixes do dia, gengibre e wasabi</span></div>
+              <span class="dish__price mono">R$ 79</span>
+            </li>
+            <li class="dish" data-img="assets/img/box-angulo.webp">
+              <img class="dish__thumb" src="assets/img/box-angulo.webp" alt="" loading="lazy" width="120" height="160">
+              <div class="dish__body"><span class="dish__name">Combo Quebrada</span><span class="dish__desc">20 peças · nigiri, hosomaki e uramaki do dia</span></div>
+              <span class="dish__price mono">R$ 89</span>
+            </li>
+            <li class="dish" data-img="assets/img/box-close.webp">
+              <img class="dish__thumb" src="assets/img/box-close.webp" alt="" loading="lazy" width="120" height="160">
+              <div class="dish__body"><span class="dish__name">Combo Real</span><span class="dish__desc">32 peças · seleção do chef com oshizushi</span></div>
+              <span class="dish__price mono">R$ 139</span>
+            </li>
+            <li class="dish" data-img="assets/img/box-duplo.webp">
+              <img class="dish__thumb" src="assets/img/box-duplo.webp" alt="" loading="lazy" width="120" height="160">
+              <div class="dish__body"><span class="dish__name">Combo Família</span><span class="dish__desc">60 peças · pra dividir com a rua inteira</span></div>
+              <span class="dish__price mono">R$ 239</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__group reveal">
+          <h3 class="menu__group-title mono">Peças</h3>
+          <ul class="menu__list">
+            <li class="dish" data-img="assets/img/nigiri-mao.webp">
+              <img class="dish__thumb" src="assets/img/nigiri-mao.webp" alt="" loading="lazy" width="120" height="160">
+              <div class="dish__body"><span class="dish__name">Nigiri do dia</span><span class="dish__desc">par · peixe do dia, raiz forte e cebolinha</span></div>
+              <span class="dish__price mono">R$ 18</span>
+            </li>
+            <li class="dish" data-img="assets/img/oshizushi-close.webp">
+              <img class="dish__thumb" src="assets/img/oshizushi-close.webp" alt="" loading="lazy" width="120" height="160">
+              <div class="dish__body"><span class="dish__name">Oshizushi do dia</span><span class="dish__desc">4 un · olho-de-boi, gergelim tostado, ova e cebolinha</span></div>
+              <span class="dish__price mono">R$ 42</span>
+            </li>
+            <li class="dish" data-img="assets/img/box-aberto.webp">
+              <img class="dish__thumb" src="assets/img/box-aberto.webp" alt="" loading="lazy" width="120" height="160">
+              <div class="dish__body"><span class="dish__name">Hosomaki de atum</span><span class="dish__desc">8 un · atum e alga, simples e certeiro</span></div>
+              <span class="dish__price mono">R$ 28</span>
+            </li>
+            <li class="dish" data-img="assets/img/box-angulo.webp">
+              <img class="dish__thumb" src="assets/img/box-angulo.webp" alt="" loading="lazy" width="120" height="160">
+              <div class="dish__body"><span class="dish__name">Uramaki negitoro</span><span class="dish__desc">8 un · atum batido, cebolinha e tobiko</span></div>
+              <span class="dish__price mono">R$ 36</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img class="menu__preview" id="menu-preview" alt="" aria-hidden="true">
+    </section>
+
+    <!-- ============ HISTÓRIA ============ -->
+    <section class="story" id="historia" aria-labelledby="story-title">
+      <div class="story__giant" aria-hidden="true">
+        <span>S</span><span>U</span><span>R</span><span>A</span><span>M</span><span>U</span>
+      </div>
+      <span class="kata kata--story" aria-hidden="true"></span>
+
+      <div class="story__body">
+        <p class="mono sec-head__index" data-scramble>05 · Nossa história</p>
+        <h2 class="story__quote reveal split" id="story-title">Antes do sushi chegar na quebrada, <mark class="bar bar--red">a quebrada</mark> chegou no sushi.</h2>
+
+        <div class="story__cols">
+          <div class="story__text reveal">
+            <p>Durante muito tempo, sushi foi coisa de restaurante elitizado. Não era comum ver peixe sendo cortado e servido na periferia.</p>
+            <p>Mas a gente já estava lá dentro. Primeiro como mão de obra, atravessando a cidade todo dia pra trabalhar nas cozinhas do outro lado. Depois como cliente. Agora, como dono.</p>
+            <p>Os primeiros sushimans brasileiros aprenderam observando os mestres japoneses, na prática, no corre. A SURAMU nasce disso: sushi adaptado pro estilo de vida dos nossos, sem perder o respeito por uma cultura milenar.</p>
+          </div>
+          <figure class="photo story__photo reveal">
+            <img src="assets/img/chef-peixe-avental.webp" width="1280" height="1600" loading="lazy"
+                 alt="O chef com o avental bordado da SURAMU segurando um olho-de-boi">
+            <figcaption class="mono"><span>スラム</span> Da quebrada pra quebrada.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker ticker--red" aria-hidden="true">
+      <div class="ticker__track ticker__track--rev">
+        <span>Pede no zap <i>✱</i> Peixe fresco, sem frescura <i>✱</i> Real sushi <i>✱</i> Da quebrada pra quebrada <i>✱</i>&nbsp;</span>
+        <span>Pede no zap <i>✱</i> Peixe fresco, sem frescura <i>✱</i> Real sushi <i>✱</i> Da quebrada pra quebrada <i>✱</i>&nbsp;</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER / PEDIR ============ -->
+  <footer class="footer" id="pedir">
+    <div class="pattern" aria-hidden="true"></div>
+    <div class="footer__cta">
+      <h2 class="footer__title reveal split">Bateu a <span class="footer__fome">fome?</span></h2>
+      <p class="footer__text reveal">O cardápio muda todo dia. Chama no zap e pergunta o que chegou.</p>
+      <div class="footer__btns reveal">
+        <!-- TODO: link real do iFood -->
+        <a class="btn btn--white btn--big" href="https://wa.me/5511994139997?text=Oi%2C%20SURAMU!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir no WhatsApp <span aria-hidden="true">→</span></a>
+        <a class="btn btn--black btn--big" href="#">iFood <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="footer__info mono">
+      <div>
+        <h3>Horário</h3>
+        <p>Ter a sáb · 18h às 22h<br>Dom · fechado</p>
+        <p class="status footer__status" data-status><i class="status__dot"></i><span class="status__text"></span></p>
+      </div>
+      <div>
+        <h3>Endereço</h3>
+        <address>R. Damiana da Cunha, 234<br>Santana · São Paulo, SP<br>CEP 02450-010</address>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=R.%20Damiana%20da%20Cunha%2C%20234%20-%20Santana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002450-010" target="_blank" rel="noopener">Ver no mapa ↗</a></p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p><a href="tel:+5511994139997">(11) 99413-9997</a><br><a href="https://wa.me/5511994139997?text=Oi%2C%20SURAMU!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">WhatsApp ↗</a></p>
+        <!-- TODO: links reais de Instagram e TikTok -->
+        <p><a href="#">Instagram</a> · <a href="#">TikTok</a></p>
+      </div>
+      <div><h3>Regra da casa</h3><p>Sem salmão<br>Sem cream cheese</p></div>
+    </div>
+
+    <span class="tag footer__tag" aria-hidden="true"></span>
+
+    <div class="footer__base mono">
+      <span>© 2026 SURAMU スラム</span>
+      <span class="footer__legal"><a href="politica-de-privacidade.html">Privacidade</a><a href="politica-de-cookies.html">Cookies</a></span>
+      <a class="footer__credit" href="https://senerine.dev" target="_blank" rel="noopener">Desenvolvido por <b>senerine.dev</b> ↗</a>
+      <a href="#top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <a class="fab btn btn--black" href="https://wa.me/5511994139997?text=Oi%2C%20SURAMU!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir no WhatsApp</a>
+
+  <script src="data/peixes-do-dia.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/cookies.js" defer></script>
+</body>
+</html>

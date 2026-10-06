@@ -1,0 +1,13 @@
+{
+  "name": "SURAMU スラム · Real Sushi · Delivery de Quebrada",
+  "short_name": "SURAMU",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#C8141A",
+  "theme_color": "#C8141A",
+  "icons": [
+    { "src": "assets/og/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/og/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

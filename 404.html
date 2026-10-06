@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR" class="is-ready">
+<head>
+  <meta charset="utf-8">
+  <script>
+    // A 404 é servida em qualquer endereço quebrado. No GitHub Pages o site fica em /SuramuSushi/;
+    // num domínio próprio, fica na raiz. A <base> faz os caminhos relativos funcionarem nos dois casos.
+    (function () {
+      var base = location.hostname.endsWith("github.io") ? "/" + location.pathname.split("/")[1] + "/" : "/";
+      document.write('<base href="' + base + '">');
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página não encontrada · SURAMU スラム</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#C8141A">
+  <link rel="icon" href="assets/og/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/brand/suramu-kata.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/og/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Syne:wght@400;500;700&family=Space+Mono:wght@400;700&family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="nf">
+    <div class="pattern" aria-hidden="true"></div>
+
+    <header class="nf__top">
+      <a href="./" aria-label="SURAMU, voltar ao início"><span class="kata" aria-hidden="true"></span></a>
+      <a class="btn btn--black btn--sm" href="https://wa.me/5511994139997?text=Oi%2C%20SURAMU!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir agora</a>
+    </header>
+
+    <section class="nf__main" aria-labelledby="nf-title">
+      <p class="nf__label mono"><span>Erro 404</span><span class="jp">本日の魚なし</span></p>
+
+      <p class="nf__code" aria-hidden="true">
+        <span>4</span>
+        <span class="nf__zero">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="nf-circle" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+            <circle cx="100" cy="100" r="99" fill="#0E0E0E"/>
+            <text><textPath href="#nf-circle" textLength="474">PÁGINA NÃO ENCONTRADA ✱ PEIXE FORA DO MAR ✱</textPath></text>
+            <g transform="translate(100 102) scale(1.2)" fill="none" stroke="#C8141A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M-38 0 C-24 -22 14 -22 28 0 C14 22 -24 22 -38 0Z"/>
+              <path d="M28 0 L46 -14 L42 0 L46 14Z"/>
+              <path d="M-26 -8 l8 8 M-18 -8 l-8 8"/>
+              <path d="M-6 -9 v18 M4 -10 v20 M14 -8 v16"/>
+            </g>
+          </svg>
+        </span>
+        <span>4</span>
+      </p>
+
+      <h1 class="nf__title" id="nf-title">Esse peixe <mark>não chegou</mark> hoje.</h1>
+      <p class="nf__text">A página que você procurou acabou, igual o polvo de ontem. Mas o balcão tá aberto: volta pro início ou já chama no zap.</p>
+      <div class="nf__btns">
+        <a class="btn btn--white btn--big" href="./">Voltar pro início <span aria-hidden="true">→</span></a>
+        <a class="btn btn--black btn--big" href="index.html#cardapio">Ver cardápio <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <img class="hero__nigiri" src="assets/img/nigiri-cutout.png" width="700" height="491" alt="">
+
+    <p class="nf__credit mono"><a class="footer__credit" href="https://senerine.dev" target="_blank" rel="noopener">Desenvolvido por <b>senerine.dev</b> ↗</a></p>
+
+    <div class="ticker nf__ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>404 <i>✱</i> Peixe fora do mar <i>✱</i> Sem salmão <i>✱</i> Sem cream cheese <i>✱</i> Só peixe do dia <i>✱</i>&nbsp;</span>
+        <span>404 <i>✱</i> Peixe fora do mar <i>✱</i> Sem salmão <i>✱</i> Sem cream cheese <i>✱</i> Só peixe do dia <i>✱</i>&nbsp;</span>
+      </div>
+    </div>
+  </main>
+  <script>
+    // com <base>, a referência interna do SVG precisa apontar para esta mesma página
+    document.querySelector("textPath").setAttribute("href", location.href.split("#")[0] + "#nf-circle");
+  </script>
+  <script src="js/cookies.js" defer></script>
+</body>
+</html>

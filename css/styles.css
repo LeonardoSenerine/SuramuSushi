@@ -417,7 +417,19 @@ body::after {
 .shop__lead img { aspect-ratio: 4 / 3; object-position: 50% 30%; }
 .item__name { font-family: var(--font-display); text-transform: uppercase; font-size: var(--step-2); line-height: 1; margin-top: 14px; }
 .item__desc { margin-top: 8px; opacity: .72; }
-.shop__cta { margin-top: clamp(40px, 6vh, 64px); }
+/* loja esgotada: carimbo em cada peça e chamada para o próximo lançamento */
+.item .photo img { filter: grayscale(.4) brightness(.8); }
+.soldout {
+  position: absolute; z-index: 2; top: 14px; left: 14px;
+  background: var(--red); color: var(--white);
+  padding: .45em .8em; font-weight: 700;
+  box-shadow: 4px 4px 0 var(--black);
+  rotate: -6deg;
+}
+.js .item .soldout { opacity: 0; transform: scale(1.7); transition: transform .55s var(--ease-stamp), opacity .2s; }
+.js .item.is-in .soldout { opacity: 1; transform: none; transition-delay: .6s; }
+.shop__next { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; margin-top: clamp(56px, 8vh, 96px); }
+.shop__soon { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(2rem, 5vw, 4rem); line-height: .95; }
 
 /* ============ EVENTOS ============ */
 .events {
